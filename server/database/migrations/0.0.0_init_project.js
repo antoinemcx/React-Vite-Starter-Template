@@ -1,4 +1,4 @@
-// Run 'node database/migrations/<file>.js' to migrate on local database or 'node database/migrations/<file>.js production' on production
+// Run 'node database/migrations/<file>.js' to migrate on the database
 const db = require('../db');
 
 db.query(`
