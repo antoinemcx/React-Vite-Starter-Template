@@ -1,0 +1,135 @@
+/* --- App global CSS */
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+* {
+    font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17.5px;box-sizing: border-box; color: var(--text);
+}
+*, ::after, ::before { box-sizing: border-box; }
+
+:root {
+    --background: #16161a; --background-card: #242629;
+    --background-transparent: #16161ae1;
+    --background-second: #242629; --background-card-second: #16161a;
+    --text: #94a1b2;
+    --heading: #fffffe; --text-low: #8290a1;
+    --main: #7f5af0; --main-hover: #9177e0;
+    --button-text: #fffffe;
+
+    --scrollbar: #d1d3da; --lines: #8290a1;
+    --red: #bb3e3a; --green: #36b480; --white: #fffffe;
+}
+
+html,body { height: 100%; width: 100% }
+html { position: relative; }
+body {
+    position: absolute; margin: 0; padding: 10px;
+    background: var(--background); box-sizing: border-box;
+}
+a { color: var(--main); text-decoration: none!important; }
+a:hover { color: var(--main-hover); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar) }
+
+.page-container { margin-top: 18vh; display: flex; justify-content: center; }
+
+
+/* * --- My cutstom CSS (antoinemcx) */
+.computer { display: block; }
+.mobile { display: none; }
+@media screen and (max-width: 950px) {
+    .computer { display: none!important; }
+    .mobile { display: block!important; }
+}
+.d-flex { display: flex!important; }
+.show { display: block!important; }
+.hide { display: none!important; }
+
+.container { width:100%; padding-right:15px; padding-left:15px; margin-right:auto; margin-left:auto }
+@media (min-width:576px) { .container { max-width:540px } }
+@media (min-width:768px) { .container { max-width:720px } }
+@media (min-width:992px) { .container { max-width:960px } }
+@media (min-width:1200px) { .container { max-width:1145px } }
+/* --- */
+
+
+/* * --- Navbar */
+header {
+    display: flex; justify-content: space-between; margin-bottom: 3rem;
+    align-items: center; padding: 15px 6%; background: var(--background);
+}
+header .logo { cursor: pointer; margin-right: 10px; padding-left: 0!important; }
+header .logo a { color: var(--main)!important; font-weight: bold; font-size: 25px!important; }
+header .logo a:hover { color: var(--main-hover)!important; }
+header .navbar, header .nav__menu { list-style: none; display: flex; }
+header .navbar li { padding: 0 30px; cursor: pointer; position: relative; align-self: center; }
+header .navbar li a { transition: all .2s ease; font-size: 18px; color: var(--text); }
+header .navbar li a:hover { color: var(--text-hover); }
+
+header .nav__hamburger { cursor: pointer; display: none; }
+header .nav__hamburger div {
+    width: 25px; height: 3px; transition: all 0.3s ease-in-out;
+    margin: 5px auto; background-color: var(--main);
+}
+header.open .nav__hamburger div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+header.open .nav__hamburger div:nth-child(2) { opacity: 0 }
+header.open .nav__hamburger div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media screen and (max-width: 950px) {
+    .nav__hamburger { display: block!important; }
+    header:not(.open) .nav__menu {
+        visibility: hidden; transform: translate(100%);
+        transition: transform 0s;
+    }
+    .nav__menu {
+        display: block!important;
+        position: fixed; top: 12vh; flex-direction: column;
+        right: 0; padding: 77px 0 0;
+        width: 100vw; height: 95vh;
+        background-color: var(--background-transparent);
+        z-index: 50; backdrop-filter: blur(12px);
+        transition: transform .3s ease; transform: none;
+    }
+    header .navbar li { margin: 0; padding: 0 }
+    header .navbar li:not(.logo) { padding: 20px 0 }
+    header .navbar li:not(.logo) a {
+        padding: 15px 40px; width: 100%;
+        font-weight: 500; display: block; font-size: 23px;
+    }
+
+    header .logo a { color: var(--text)!important; }
+    header .logo a:hover { color: var(--text-hover)!important; }
+}
+
+
+/* * -- BUTTONS */
+.button {
+    border: 2px solid var(--main); border-radius: 1rem; cursor: pointer;
+    padding: 8px 20px; color: var(--main);
+    transition: all .2s ease; background-color: var(--background);
+}
+.button:hover { color: var(--main-hover); border-color: var(--main-hover); }
+.button-full { background-color: var(--main); color: var(--button-text)!important; }
+.button-full:hover { background-color: var(--main-hover); }
+
+
+/* * --- TEXT STYLING */
+/* Main page welcoming text */
+h1 {
+    color: var(--heading); margin-bottom: 16px;
+    font-size: 55px; line-height: 1.10; font-weight: 700;
+}
+/* Main sections heading */
+h2 {
+    color: var(--heading); margin-bottom: 10px;
+    font-size: 48px; line-height: 1.10; font-weight: 700;
+}
+/* Sections titles and other */
+h3 {
+    color: var(--heading); margin-bottom: 0;
+    font-size: 32px; line-height: 30px; font-weight: 700;
+}

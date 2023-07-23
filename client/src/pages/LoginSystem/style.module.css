@@ -1,0 +1,60 @@
+.container {
+    max-width: 400px; margin-top: 100px;
+    background: var(--background-card);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; overflow: hidden;
+}
+
+.form_container {
+    display: flex; align-items: center;
+    padding: 25px; transition: height 0.2s ease;
+}
+.form { width: 150% }
+
+.form .title {
+    position: relative; font-size: 30px;
+    font-weight: 700; color: var(--heading);
+}
+
+.form .input_field {
+    position: relative; margin-top: 20px;
+    height: 50px; width: 100%;
+}
+.form a:hover { text-decoration: underline; }
+
+.form .input_field input {
+    height: 100%; width: 100%;
+    padding-right: 5px; padding-left: 35px;
+    border: none; outline: none;
+    background-color: var(--background-card); font-size: 16px;
+    border-bottom: 2px solid var(--lines);
+    border-top: 2px solid transparent; transition: all 0.2s ease;
+}
+.form .input_field input:is(:focus, :valid) { border-bottom-color: var(--main); }
+
+.input_field svg.input_icon {
+    position: absolute; top: 50%;
+    transform: translateY(-50%); font-size: 23px;
+    color: var(--text-low); transition: all 0.2s ease;
+}
+
+.form .button { border-radius: 10px!important; font-size: 20px; height: 40px; }
+.form .button:disabled { cursor: not-allowed }
+.form .button:disabled:hover { border-color: var(--main); background-color: var(--main); }
+
+.instructions {
+    font-size: 15.5px; border-radius: 8px;
+    background: var(--text); padding: 10px;
+    color: var(--white); width: 100%;
+    position: absolute; z-index: 100;
+}
+
+.err_message {
+    color: var(--button-text); background-color: var(--red);
+    font-weight: bold; margin-bottom: .5rem; padding: .5rem; border-radius: 10px;
+}
+
+.checkBox {
+    height: 16px; width: 16px;
+    cursor: pointer; margin: 0 5px 2px 2px;
+}
