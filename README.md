@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-    <a title="MIT Licence" href="LICENCE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT Licence"></a>
+    <a title="MIT License" href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
     <a title="CodeFactor" href="https://www.codefactor.io/repository/github/antoinemcx/react-vite-starter-template">
         <img src="https://www.codefactor.io/repository/github/antoinemcx/react-vite-starter-template/badge" alt="CodeFactor">
     </a>
-    <a title="Stars" href="[LICENCE](https://github.com/antoinemcx/React-Vite-Starter-Template)">
+    <a title="Stars" href="https://github.com/antoinemcx/React-Vite-Starter-Template">
         <img src="https://img.shields.io/github/stars/antoinemcx/React-Vite-Starter-Template" alt="Stars">
     </a>
     <a title="Support server" href="https://discord.gg/G6WQsMQShZ">
@@ -37,13 +37,30 @@ If you want to use Vite instead you'll find it in the "[main](https://github.com
 <br>
 
 ## Setup the project
+
+### 1. Installation
 First, install the dependencies in the two folders separately :
 ```sh
 $ cd client ; npm install
 $ cd server ; npm install
 ```
+
+### 2. Configuration
 Then, rename the **.env** files in the **server/** folder into **.env** and replace the values if needed.
 Finally, change the values of the **.env.development** and **.env.production** of the **client/** folder if needed.
+
+### 3. Database
+This template uses on the MariaDB database, a slightly modified version of MySQL.<br>
+First, create the database. The name of the database must be the same as the one set in the **server/.env** file.<br>
+
+![](https://i.imgur.com/ALeKvsf.png "Creating a database on phpMyAdmin")
+
+After creating the database, run following command :
+```sh
+$ cd server ; node database/migrations/0.0.0_init_project.js
+```
+
+<br>
 
 ## Scripts
 
