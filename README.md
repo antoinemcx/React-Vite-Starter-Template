@@ -37,12 +37,29 @@ If you need you'll find a branch "[CRA](https://github.com/antoinemcx/React-Vite
 <br>
 
 ## Setup the project
+
+### 1. Installation
 First, install the dependencies in the two folders separately :
 ```sh
 $ cd client ; npm install
 $ cd server ; npm install
 ```
+
+### 2. Configuration
 Then, rename the **.env.example** files in the two folders into **.env**  and replace the values if needed.
+
+### 3. Database
+This template uses on the MariaDB database, a slightly modified version of MySQL.<br>
+First, create the database. The name of the database must be the same as the one set in the **server/.env** file.<br>
+
+![](https://i.imgur.com/ALeKvsf.png "Creating a database on phpMyAdmin")
+
+After creating the database, run following command :
+```sh
+$ cd server ; node database/migrations/0.0.0_init_project.js
+```
+
+<br>
 
 ## Scripts
 
