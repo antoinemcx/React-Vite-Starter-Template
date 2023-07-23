@@ -42,7 +42,7 @@ First, install the dependencies in the two folders separately :
 $ cd client ; npm install
 $ cd server ; npm install
 ```
-Then, rename the **.env** files in the two folders and replace the values if needed.
+Then, rename the **.env.example** files in the two folders into **.env**  and replace the values if needed.
 
 ## Scripts
 
@@ -66,4 +66,4 @@ In development, you will mainly use `npm run start` on both **server/** and **cl
 ## More information
 
 For any errors found, please contact me [here](https://discord.gg/G6WQsMQShZ) or do a pull request.  
-This repository is licensed under the MIT License. See the `LICENSE` file ([here](https://github.com/antoinemcx/React-Vite-Starter-Template/blob/master/LICENSE)) for more information.
+This repository is licensed under the MIT License. See the `LICENSE` file ([here](LICENCE)) for more information.
