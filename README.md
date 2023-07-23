@@ -1,6 +1,6 @@
-<h1 align="center">React-Vite-Starter-Template</h1>
+<h1 align="center">React-<strike>Vite</strike>-Starter-Template</h1>
 <p align="center">
-    Full-stack starter template for React projects by <a href="https://github.com/antoinemcx">antoinemcx</a> using Vite.<br />
+    Full-stack starter template for React projects by <a href="https://github.com/antoinemcx">antoinemcx</a> using <strike>Vite</strike> <b>CRA</b>.<br />
     If you like the project, feel free to put a ⭐ ; If you need help, join the <a href="https://discord.gg/G6WQsMQShZ">server support</a>.
 </p>
 
