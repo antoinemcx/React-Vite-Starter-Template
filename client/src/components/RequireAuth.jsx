@@ -12,7 +12,7 @@ export const RequireAuth = ({ allowedRoles }) => {
     const decoded = auth?.accessToken ? jwt_decode(auth.accessToken) : undefined;
     const roles = decoded?.user.roles || []
 
-    if(!roles.find(role => allowedRoles?.includes(role)) && !auth?.accessToken) { logout() }
+    if(!roles.find(role => allowedRoles?.includes(role)) && !auth?.username) { logout() }
 
     return (
         roles.find(role => allowedRoles?.includes(role))

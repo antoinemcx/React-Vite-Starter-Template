@@ -20,8 +20,12 @@
 </p>
 
 ## Features
+### CRA version
+⚠️ ***This branch is the Create-React-App version of this template.   
+If you want to use Vite instead you'll find it in the "[main](https://github.com/antoinemcx/React-Vite-Starter-Template/tree/main)" branch.***   
+
 * 🚀 Full-stack app : ready to code with a starter file structure !
-* 📁 Separated client (React+Vite) and server (express) sides
+* 📁 Separated client (React+CRA) and server (express) sides
 * ❌ Custom error paging
 * 🖌️ Integration of FontAwesome
 * ✏️ Pages template with a responsive header and a Title
@@ -29,10 +33,6 @@
 * 🔑 JWT Authentication system
 * 👥 Sign up page with conditional logic and Sign in with "Remember me"
 * 🔐 Private routing with a loading message
-* ⚙️ A basic ESLint configuration for the client side
-
-<!-- ### CRA version
-If you need you'll find a branch "[CRA](https://github.com/antoinemcx/React-Vite-Starter-Template/tree/cra)" for the same application bootstraped with Create-React-App instead of Vite. -->
 
 <br>
 
@@ -42,7 +42,8 @@ First, install the dependencies in the two folders separately :
 $ cd client ; npm install
 $ cd server ; npm install
 ```
-Then, rename the **.env** files in the two folders and replace the values if needed.
+Then, rename the **.env** files in the **server/** folder into **.env** and replace the values if needed.
+Finally, change the values of the **.env.development** and **.env.production** of the **client/** folder if needed.
 
 ## Scripts
 
@@ -51,19 +52,19 @@ In development, you will mainly use `npm run start` on both **server/** and **cl
 ### In the server/ folder
 |`npm run <script>` |Description|
 |-------------------|-----------|
-|`start`            |Serves your app at `localhost:3001`|
+|`start`            |Serves your app at `localhost:3002`|
 
 ### In the client/ folder
 |`npm run <script>` |Description|
 |-------------------|-----------|
-|`start`              |Serves your app at `localhost:1234`|
-|`build`            |Builds the application for production to ./dist|
-|`lint`             |[Lints](https://en.wikipedia.org/wiki/Lint_%28software%29) the project to review errors|
-|`preview`          |Preview your production app|
+|`start`            |Serves your app at `localhost:3000`|
+|`production`       |Builds the application for production to ./dist|
+|`test`             |Run the tests if you provide some tests files|
+|`eject`            |Remove the ./dist folder and eject the configs|
 
 <br>
 
 ## More information
 
 For any errors found, please contact me [here](https://discord.gg/G6WQsMQShZ) or do a pull request.  
-This repository is licensed under the MIT License. See the `LICENSE` file ([here](https://github.com/antoinemcx/React-Vite-Starter-Template/blob/master/LICENSE)) for more information.
+This repository is licensed under the MIT License. See the `LICENSE` file ([here](LICENSE)) for more information.

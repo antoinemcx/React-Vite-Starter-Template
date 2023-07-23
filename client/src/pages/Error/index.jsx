@@ -15,7 +15,7 @@ export const Error = (props) => {
     } else if(props.code === '403') {
         message = "Forbidden.";
         subMessage = "You do not have access to this page.";
-    }
+    };
 
     return (
         <div className="container error-container page-container">
@@ -24,7 +24,7 @@ export const Error = (props) => {
                 <h2>{message || "Something went wrong"}</h2>
                 <p>{subMessage || "An error has occured, maybe you did something wrong ?"}</p>
 
-                <Link to="/" className="button button-full">Back to home</Link>
+               <Link to="/" className="button button-full">Back to home</Link>
                 {props.code === '403' && <button onClick={goBack} className="button" style={{marginLeft: "10px"}}>Go back</button>}
             </div>
         </div>

@@ -40,7 +40,7 @@ const login = async (req, res) => {
                 "roles": roles
             }},
             process.env.ACCESSTOKEN_SECRET,
-            { expiresIn: '10s' }
+            { expiresIn: '5m' }
         );
         const refreshToken = jwt.sign(
             { "username": searchUser[0].username },
@@ -95,7 +95,7 @@ const refreshToken = async (req, res) => {
                     "roles": roles
                 }},
                 process.env.ACCESSTOKEN_SECRET,
-                { expiresIn: '10s' }
+                { expiresIn: '5m' }
             );
             res.json({ username: searchUser[0].username, email: searchUser[0].email, accessToken })
         }

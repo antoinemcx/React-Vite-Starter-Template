@@ -15,6 +15,12 @@
     position: relative; font-size: 30px;
     font-weight: 700; color: var(--heading);
 }
+.form .title::before{
+    content: ''; position: absolute;
+    left: 0; bottom: -1px;
+    height: 3px; width: 25px;
+    background-color: var(--main); border-radius: 25px;
+}
 
 .form .input_field {
     position: relative; margin-top: 20px;

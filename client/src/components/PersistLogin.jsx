@@ -24,6 +24,7 @@ const PersistLogin = () => {
         !auth?.accessToken && persist ? checkRefreshToken() : setIsLoading(false);
 
         return () => isMounted = false;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

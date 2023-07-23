@@ -93,7 +93,7 @@ export const Login = () => {
                         </div>
                         
                         <div style={{marginTop: '35px'}}>
-                            <input type="checkbox" id="persist_checkBox" className={styles.checkBox} onChange={togglePersist} checked={JSON.parse(persist)} />
+                            <input type="checkbox" id="persist_checkBox" className={styles.checkBox} onChange={togglePersist} checked={persist} />
                             <label htmlFor='persist_checkBox'>Remember me</label>
                         </div>
 
