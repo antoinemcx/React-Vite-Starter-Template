@@ -13,7 +13,7 @@
         <img src="https://img.shields.io/github/stars/antoinemcx/React-Vite-Starter-Template" alt="Stars">
     </a>
     <a title="Support server" href="https://discord.gg/G6WQsMQShZ">
-        <img src="https://img.shields.io/discord/738122381062832180.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Support server">
+        <img src="https://img.shields.io/discord/738122381062832180.svg?logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&label=Support" alt="Support server">
     </a>
 
    <br>
