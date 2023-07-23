@@ -31,8 +31,8 @@
 * 🔐 Private routing with a loading message
 * ⚙️ A basic ESLint configuration for the client side
 
-<!-- ### CRA version
-If you need you'll find a branch "[CRA](https://github.com/antoinemcx/React-Vite-Starter-Template/tree/cra)" for the same application bootstraped with Create-React-App instead of Vite. -->
+### CRA version
+If you need you'll find a branch "[CRA](https://github.com/antoinemcx/React-Vite-Starter-Template/tree/cra)" for the same application bootstraped with Create-React-App instead of Vite.
 
 <br>
 
