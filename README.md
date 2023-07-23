@@ -6,8 +6,8 @@
 
 <p align="center">
     <a title="MIT Licence" href="LICENCE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT Licence"></a>
-    <a title="CodeFactor" href="https://www.codefactor.io/repository/github/antoinemcx/React-Vite-Starter-Template">
-        <img src="https://www.codefactor.io/repository/github/antoinemcx/React-Vite-Starter-Template/badge" alt="CodeFactor">
+    <a title="CodeFactor" href="https://www.codefactor.io/repository/github/antoinemcx/react-vite-starter-template">
+        <img src="https://www.codefactor.io/repository/github/antoinemcx/react-vite-starter-template/badge" alt="CodeFactor">
     </a>
     <a title="Stars" href="[LICENCE](https://github.com/antoinemcx/React-Vite-Starter-Template)">
         <img src="https://img.shields.io/github/stars/antoinemcx/React-Vite-Starter-Template" alt="Stars">
