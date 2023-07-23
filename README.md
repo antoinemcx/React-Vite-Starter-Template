@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <a title="MIT Licence" href="LICENCE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT Licence"></a>
+    <a title="MIT License" href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
     <a title="CodeFactor" href="https://www.codefactor.io/repository/github/antoinemcx/react-vite-starter-template">
         <img src="https://www.codefactor.io/repository/github/antoinemcx/react-vite-starter-template/badge" alt="CodeFactor">
     </a>
@@ -66,4 +66,4 @@ In development, you will mainly use `npm run start` on both **server/** and **cl
 ## More information
 
 For any errors found, please contact me [here](https://discord.gg/G6WQsMQShZ) or do a pull request.  
-This repository is licensed under the MIT License. See the `LICENSE` file ([here](LICENCE)) for more information.
+This repository is licensed under the MIT License. See the `LICENSE` file ([here](LICENSE)) for more information.
